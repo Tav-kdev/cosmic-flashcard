@@ -44,7 +44,7 @@ abstract class CosmicDatabase : RoomDatabase() {
                     "cosmic.db",
                 )
                     // Foreign keys drive deck-delete (SET NULL) and tag cleanup.
-                    .setJournalMode(JournalMode.WRITE_AHEAD_LOGGING)
+                    .setJournalMode(RoomDatabase.JournalMode.WRITE_AHEAD_LOGGING)
                     .build()
                     .also { INSTANCE = it }
             }
