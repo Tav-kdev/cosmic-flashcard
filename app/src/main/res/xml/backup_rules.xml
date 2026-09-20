@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Back up the card database so a device restore keeps your decks. -->
+<full-backup-content>
+    <include domain="database" path="cosmic.db" />
+    <include domain="database" path="cosmic.db-wal" />
+    <include domain="database" path="cosmic.db-shm" />
+</full-backup-content>

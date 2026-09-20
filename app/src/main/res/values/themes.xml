@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      The app draws its own dark background in Compose; this theme only needs
+      to avoid a white flash before the first frame.
+    -->
+    <style name="Theme.Cosmic" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/space_950</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
